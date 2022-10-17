@@ -66,15 +66,15 @@ function App() {
       <div className="header">Chalo APP</div>
 
       <Routes>
-        <Route path="/" element={
+        <Route path="krishna-j005.github.io/Chalo-App/" element={
           <>
             <Filter handleFilterChange={handleFilterChange} handleResetChange={handleResetChange} />
             <Table columns={columns} rowsPerPageOptions={rowsPerPageOptions} rows={rows} buttons={buttons} />
           </>}
         />
-        <Route path="addRoute" exact element={<ChaloForm editData ={false}/>} />
-        <Route path="editRoute/:routeId" element={<ChaloForm editData ={true}/>} />
-        <Route path="viewRoute/:routeId" element={<Maps/>} />
+        <Route path="krishna-j005.github.io/Chalo-App/addRoute" exact element={<ChaloForm editData ={false}/>} />
+        <Route path="krishna-j005.github.io/Chalo-App/editRoute/:routeId" element={<ChaloForm editData ={true}/>} />
+        <Route path="/krishna-j005.github.io/Chalo-App/viewRoute/:routeId" element={<Maps/>} />
         <Route path="*" element = {<NotFound/>}/>
       </Routes>
     </div>
