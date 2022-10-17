@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './style.js';
-import { Formik, Form, Field, } from 'formik';
+import { Formik, Form } from 'formik';
 import Input from '@material-ui/core/Input';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -47,7 +47,7 @@ const Filter = (props) => {
         props.handleResetChange();
     }
 
-    useEffect( () => {
+    useEffect(() => {
         try {
             setFilter({
                 ...filter,

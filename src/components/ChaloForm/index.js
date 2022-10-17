@@ -46,7 +46,7 @@ const RouteProperty = (props) => {
     // console.log(param,props,"ppppppppppppp")
     const [formValues, setFormValues] = useState(null)
     const [validatedAll, setValidatedAll] = useState(null)
-    const [options, setOptions] = useState([])
+    // const [options, setOptions] = useState([])
     const [pending, setPending] = useState(true);
     const [data,setData] = useState([])
     const validationSchemaCheck = useCallback(() => {
@@ -70,7 +70,7 @@ const RouteProperty = (props) => {
         else if (!formValues && props.editData) {
             
             const val = localData.filter((curr,ind) =>{
-                return curr.routeId == param.routeId
+                return curr.routeId === param.routeId
              })
             const route = {...val[0]}
 
